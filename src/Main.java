@@ -8,16 +8,19 @@ public class Main {
         int nElementos;
         int aux;
 
+        
         System.out.println("Ingrese la cantidad del arreglo");
         nElementos = scanner.nextInt();
 
         arreglo = new int[nElementos];
 
+        //Pidiendo los numeros al usuario
         for (int i = 0; i < nElementos; i++) {
             System.out.println("ingrese los numeros a ordenar");
             arreglo[i] = scanner.nextInt();
         }
 
+        //Ordenando el arreglo
         for (int i = 0; i < arreglo.length - 1; i++) {
             for (int j = 0; j < arreglo.length - 1; j++) {
                 if (arreglo[j] > arreglo[j + 1]) {
@@ -27,7 +30,7 @@ public class Main {
                 }
             }
         }
-
+        //Imprimiendo el arreglo
         System.out.println("error");
         for (int ints : arreglo) {
             System.out.print(ints + " ");
